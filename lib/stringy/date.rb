@@ -10,7 +10,7 @@ module Stringy
             @date = obj
         end
 
-        def time_since(precise = false)
+        def time_since
             difference_in_days = (::Date.today - date).to_i
             if difference_in_days == 0
                 '0 days'
